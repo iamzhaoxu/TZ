@@ -1,0 +1,88 @@
+﻿@cell_margin : 4px;
+@small_size : 30px;
+@medium_size : 60px;
+@large_size : 90px;
+@extra_large_size : 120px;
+
+@actual_small_size : @small_size - @cell_margin;
+@actual_medium_size : @medium_size - @cell_margin;
+@actual_large_size : @large_size - @cell_margin;
+@actual_extra_large_size : @extra_large_size - @cell_margin;
+@terminal_size: 5*@small_size - @cell_margin;
+
+.cell{
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    width:100%;
+    background-color: #FF6B00;
+    margin-top:@cell_margin;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+.Small {
+    .cell();
+    height:@actual_small_size;
+}
+
+.Medium {
+    .cell();
+    height:@actual_medium_size;
+}
+
+.Large {
+    .cell();
+    height:@actual_large_size;
+}
+
+.ExtraLarge {
+    .cell();
+    height:@actual_extra_large_size;
+}
+
+.Terminal {
+    margin-top:@cell_margin;
+    height: @terminal_size;
+    width:100%;
+    display:block;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+body {
+    background:#7B3F1B;
+}
+
+.container{
+    width: 100%;
+}
+.column {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin-bottom:auto;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; 
+    background-color:#ffffff;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin-bottom:auto;
+    margin-top:auto;
+    margin-left: auto;
+    margin-right: 5px;
+}
+

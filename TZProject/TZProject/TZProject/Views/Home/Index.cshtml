@@ -1,0 +1,34 @@
+﻿@using TZProject.Models
+@model TZProject.Models.LockerBank
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table class = "container">
+    <tr>
+        @{
+            foreach(LockerBank.LockersColumn lockerColumn in Model.ColumnList)
+            {
+                <td style = "width:@Model.ColumnWidth;vertical-align:top;" >
+                    @{
+                        foreach(LockerBank.LockerInfo lockerInfo in   lockerColumn.LockersList)
+                        {
+                            if(!lockerInfo.Terminal)
+                            {
+                                <div id="@Guid.NewGuid()" class="@lockerInfo.Size">
+                                    <div class="circle"></div>
+                                </div>
+                            }
+                            else
+                            {
+                                <img class="Terminal" src="~/Images/ADAM_TerminalImage.png"/>
+                            }
+                        }
+                    }
+                </td>
+            }
+        }
+      
+    </tr>
+</table>

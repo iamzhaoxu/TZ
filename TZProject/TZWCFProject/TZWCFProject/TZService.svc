@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TZWCFProject.TZService" CodeBehind="TZService.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory"%>
