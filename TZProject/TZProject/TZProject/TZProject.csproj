@@ -211,8 +211,9 @@
     <Content Include="Global.asax" />
     <Content Include="Content\TZStyle.less" />
     <Content Include="Content\PIE\PIE.php" />
+    <None Include="Properties\PublishProfiles\tzxuz - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\tzxuz - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="ie-css3.htc" />
     <Content Include="Images\ADAM_TerminalImage.png" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
