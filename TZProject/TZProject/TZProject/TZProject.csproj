@@ -201,10 +201,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\LockerBank.xml" />
-    <Content Include="Content\PIE.htc" />
+    <Content Include="Content\PIE\PIE.htc" />
+    <Content Include="Content\PIE\PIE_IE678.js" />
+    <Content Include="Content\PIE\PIE_IE678_uncompressed.js" />
+    <Content Include="Content\PIE\PIE_IE9.js" />
+    <Content Include="Content\PIE\PIE_IE9_uncompressed.js" />
+    <Content Include="Content\PIE\PIE_uncompressed.htc" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\TZStyle.less" />
+    <Content Include="Content\PIE\PIE.php" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="ie-css3.htc" />
     <Content Include="Images\ADAM_TerminalImage.png" />
