@@ -20,7 +20,7 @@ function flash(s, color, duration)
 {
     if (s != null) {
         s.animate({
-            backgroundColor: color,
+            backgroundColor: color
         }, duration, function () {
             if (s.attr("stop") == 1 && color == normalColor) return;
             if (color == highlightColour) color = normalColor;
